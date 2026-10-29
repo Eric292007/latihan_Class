@@ -14,6 +14,15 @@ void main() {
     komp2.ram = 8 ;
     
     komp2.cetak();
+
+    var datamhs = Mahasiswa();
+    datamhs.nama = 'EV';
+    datamhs.npm = '25413125';
+    datamhs.umur = 19;
+    datamhs.alamat = '......';
+    datamhs.dosenPA = 'MG';
+
+    datamhs.cetakdatamhs();
 }
 
 //komputer1.merek = Atribut
@@ -38,7 +47,16 @@ class Komputer{
 class Mahasiswa{
     String? nama;
     String? npm;
-    int? tgllahir;
+    int? umur;
     String? alamat;
     String? dosenPA;
+
+    cetakdatamhs() {
+        print('Nama Mahasiswa : $nama');
+        print('NPM Mahasiswa : $npm');
+        print('Umur Mahasiswa : $umur');
+        print('Alamat Mahasiswa : $alamat');
+        print('Dosen Pembimbing Akademik Mahasiswa : $dosenPA');
+        print('-----------------------------------------------');
+    }
 }
