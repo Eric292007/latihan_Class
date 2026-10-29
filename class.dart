@@ -34,3 +34,11 @@ class Komputer{
         print('-------------------------------------');
     }
 }
+
+class Mahasiswa{
+    String? nama;
+    String? npm;
+    int? tgllahir;
+    String? alamat;
+    String? dosenPA;
+}
